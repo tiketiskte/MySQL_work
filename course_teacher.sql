@@ -38,6 +38,7 @@ CREATE TABLE `teacher` (
 
 LOCK TABLES `teacher` WRITE;
 /*!40000 ALTER TABLE `teacher` DISABLE KEYS */;
+INSERT INTO `teacher` VALUES ('2001','张华','001'),('2002','王明 ','002'),('2003','李萍','003'),('2004','田野 ','004'),('2005','赵瑾','005'),('2006','胡一民 ','006'),('2007','张丽','001'),('2008','王晓宇','006'),('2009','李辉','006'),('2010','赵海','004');
 /*!40000 ALTER TABLE `teacher` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-25 21:12:39
+-- Dump completed on 2020-05-05 21:34:13
