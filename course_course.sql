@@ -29,7 +29,6 @@ CREATE TABLE `course` (
   `credit` tinyint NOT NULL COMMENT '学分',
   `c_type` char(2) NOT NULL DEFAULT '必修' COMMENT '类型',
   `t_no` char(4) NOT NULL COMMENT '教师编号',
-  `description` varchar(20) NOT NULL,
   PRIMARY KEY (`c_no`),
   KEY `FK_ID3` (`t_no`),
   CONSTRAINT `FK_ID3` FOREIGN KEY (`t_no`) REFERENCES `teacher` (`t_no`)
@@ -42,6 +41,7 @@ CREATE TABLE `course` (
 
 LOCK TABLES `course` WRITE;
 /*!40000 ALTER TABLE `course` DISABLE KEYS */;
+INSERT INTO `course` VALUES ('1001','高等数学',90,6,'必修','2006'),('1002','英语',90,6,'必修','2004'),('1003','计算机基础',70,4,'必修','2001'),('1004','数据库应用',60,4,'必修','2001'),('1005','会计学',100,6,'必修','2002'),('1006','经济学',80,5,'必修','2003'),('2001','网页设计',32,1,'必修','2001'),('2002','微积分',0,5,'必修','2008'),('2003','统计学',0,5,'必修','2009');
 /*!40000 ALTER TABLE `course` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-25 21:12:39
+-- Dump completed on 2020-05-05 21:34:13
